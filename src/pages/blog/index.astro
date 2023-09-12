@@ -12,7 +12,6 @@ const allBlogPosts = await getCollection('blog');
   <div class="container">
     <h1>Blog</h1>
     {allBlogPosts.map((post, index) => {
-      console.log(post)
       const href = `/blog/${post.slug}`;
       return (
         <div>

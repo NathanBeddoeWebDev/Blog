@@ -6,15 +6,15 @@ const description = 'The perfect starter for your perfect blog.';
 const permalink = Astro.site.href;
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink}>
+<BaseLayout title={title} description={description} permalink={permalink} hasBackground={true}>
   <div class="home-container">
     <div class="home-copy">
-      <h1>Welcome to your new Astro Blog</h1>
-      <p>Check out the docs on <a href="https://www.github.com/Charca/astro-blog-template" target="_blank" rel="noopener">GitHub</a> to get started.</p>
+      <h1>Nathan's corner of the web</h1>
+      <p>Welcome to my little area of the web, where I write random thoughts about life, and tech. </p>
     </div>
 
     <div class="hero-image-container">
-      <picture>
+      <!-- <picture>
         <source srcset="/assets/home-illustration.webp" media="(min-width: 600px)">
         <img class="hero-image" alt="Illustration of person reading a book" src="/assets/home-illustration-small.webp" width="550" height="466">
       </picture>
@@ -23,7 +23,7 @@ const permalink = Astro.site.href;
         <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6" target="_blank" rel="noopener">Icons 8</a>
         from
         <a href="https://icons8.com/illustrations" target="_blank" rel="noopener">Ouch!</a>
-      </p>
+      </p> -->
     </div>
   </div>
 </BaseLayout>
@@ -41,6 +41,7 @@ const permalink = Astro.site.href;
   .home-copy {
     flex: 1;
     padding: 0 1em;
+    text-align: center;
   }
 
   .home-copy h1 {

@@ -8,15 +8,16 @@ export interface Props {
   description: string;
   permalink: string;
   current?: string;
+  hasBackground?: boolean;
 }
-const { title, description, permalink, current } = Astro.props;
+const { title, description, permalink, current, hasBackground } = Astro.props;
 ---
-<html lang="en">
+<html lang="en" class="theme-dark">
 <head>
   <BaseHead title={title} description={description} permalink={permalink} />
 </head>
 <body>
-  <div class="layout">
+  <div class={`layout ${hasBackground && "layout--has-background"}`}>
     <Header current={current} />
 
     <main>
@@ -36,15 +37,28 @@ const { title, description, permalink, current } = Astro.props;
     min-height: 100vh;
   }
 
+  .layout--has-background {
+    background-image: url('/public/assets/home-background.webp' );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* darken background to increase contrast of text */
+    background-color: rgba(0,0,0,0.5);
+
+    background-blend-mode: multiply;
+  }
+
   main {
     flex: 1;
     position: relative;
-    margin: 0 auto;
-    max-width: 1400px;
     padding: 1em 2em;
     box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: column;
+
   }
 </style>
+<script>
+</script>
