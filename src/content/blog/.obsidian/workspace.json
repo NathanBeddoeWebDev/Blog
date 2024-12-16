@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "who-am-i.md",
+                "file": "hello-world.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d107f065fd5093fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Queues in Node.JS (and Bun).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "who-am-i.md",
+                "file": "Queues in Node.JS (and Bun).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "who-am-i.md",
+                "file": "Queues in Node.JS (and Bun).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "who-am-i.md"
+                "file": "Queues in Node.JS (and Bun).md"
               }
             }
           }
@@ -159,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5c6bce1015cb098b",
+  "active": "d107f065fd5093fc",
   "lastOpenFiles": [
     "hello-world.md",
-    "who-am-i.md",
-    "markdown-test.md"
+    "Queues in Node.JS (and Bun).md",
+    "markdown-test.md",
+    "who-am-i.md"
   ]
 }
