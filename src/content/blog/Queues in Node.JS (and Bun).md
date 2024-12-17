@@ -95,6 +95,6 @@ postalQueue.process(async (job) => {
 });
 ```
 
-Don't mind the duplicated Redis connection, that might be dried away somewhere in a shared file. The handle here is pretty simple, and actually proved the async scenario that I wanted to explore. When you run `bun run worker.ts`, it looks at the Redis queue, and starts looping through running the process callback. The reason the setTimeout is there, is because that pushes the callback off the main event loop, and allows the `console.log('starting worker process')` is able to run as soon as the next request comes in, and then once the 1 second is up, it executes the setTimeout callback. Works exactly like normal javascript, amazing!
+Don't worry about the duplicated Redis connection; it can be moved to a shared file later. The main handle is straightforward and effectively demonstrates the async scenario I wanted to explore. When you run `bun run worker.ts`, it checks the Redis queue and starts looping through the process callback. The `setTimeout` is used to push the callback off the main event loop, allowing `console.log('starting worker process')` to run immediately when the next request comes in. After the 1-second delay, the `setTimeout` callback executes. This works exactly like normal JavaScript—amazing!
 
 So that's my very short journey with queues. I'm not sold on bee-queue, I'm going to explore BullMQ, but I'm interested in what I can get to work in my app, and I'll be keen to share the architecture once I'm done!
