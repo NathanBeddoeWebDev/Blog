@@ -1,3 +1,8 @@
+---
+title: Queues in Node.JS and Bun
+publishDate: 17/12/2024
+description: Creating queues in Node.JS and Bun with bee-queue.
+---
 I primarily write software in JavaScript, and mostly on the browser, not in Node.JS. I'm aware of queue packages in dotnet, and I've utilized similar patterns for resiliency in Go.
 
 I've never touched queues in Node.JS. Before this week, I wouldn't've even have known which package to use. I'd heard of [BullMQ](https://docs.bullmq.io/), and I'd seen "bee-queue" floating around as a tinier option.
