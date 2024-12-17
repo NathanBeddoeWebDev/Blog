@@ -1,0 +1,6 @@
+- How the idea came about
+- What tech we're going to use to support this
+- Handling images
+- What the code looks like
+- SSR vs SSG
+- The end product
